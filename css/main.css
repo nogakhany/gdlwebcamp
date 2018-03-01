@@ -107,6 +107,39 @@ body{
   background-color: #f2f2f2;
   font-family: 'Open Sans', sans-serif;
 }
+/**GLOBALES**/
+/**se utilizara el patron de diseño MOBILE FIRST**/
+.contenedor{
+  /**solo 98% para que no esta TAN a la orilla*/
+  width: 98%;
+
+}
+/**los media queries son para 3 tamaños de pantalla de celulares**/
+@media only screen and (min-width:480px) {
+    .contenedor{
+      width: 95%;
+    }
+
+}
+
+@media only screen and (min-width:768px) {
+    .contenedor{
+      width: 90%;
+    }
+
+}
+@media only screen and (min-width:992px) {
+    .contenedor{
+      width: 90%;
+      max-width: 1100px;
+
+    }
+
+}
+
+
+
+
 h2{
   font-family: 'Oswald', sans-serif;
 }
@@ -193,6 +226,13 @@ h1.nombre-sitio{
     line-height: 1;
 
   }
+}
+
+/** Barra **/
+
+div.barra{
+  background-color: #353535;
+  padding: 20px 0;
 }
 
 
