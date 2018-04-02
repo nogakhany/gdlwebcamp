@@ -137,9 +137,6 @@ body{
 
 }
 
-
-
-
 h2{
   font-family: 'Oswald', sans-serif;
 }
@@ -236,6 +233,7 @@ div.barra{
 }
 div.logo{
   width:  80%;
+  float: left;
 }
 
 div.logo img{
@@ -251,7 +249,7 @@ div.logo img{
   div.logo{
 
     width: 33%;
-    float: left;
+
   }
 
 }
@@ -259,17 +257,21 @@ div.logo img{
 /** nav. Principal **/
 
 nav.navegacion-principal{
-
   display: none;
 }
 nav.navegacion-principal a{
 
-  font-family: font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: #ffffff;
   font-size: 1.3em;
   text-transform: uppercase;
   text-decoration: none;
+  /* cambia el color cuando el cursor esta cerca:*/
   transition: all .6s ease;
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
 
 }
 nav.navegacion-principal a:hover{
@@ -285,8 +287,8 @@ nav.navegacion-principal a:last-child{
 
 }
 
-nav.navegacion-principal a :last-child:hover{
-  color: : blue;
+nav.navegacion-principal a:last-child:hover {
+  color: #ffffff;
 
 }
 
@@ -302,14 +304,47 @@ nav.navegacion-principal a :last-child:hover{
   }
   nav.navegacion-principal a{
 
-    margin-right: 10px;
     padding: 10px 10px;
     display: inline-block;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    margin:0 10px 0 0;
+
   }
 
-
-
 }
+ /* Menu-Movil*/
+ div.menu-movil {
+   width: 60px;
+   display: block;
+   float: right;
+   text-align: right;
+   margin-top: 12px;
+ }
+
+ div.menu-movil:hover {
+   /* cursor de la MANITA al pasar por el menu movil*/
+   cursor: pointer;
+ }
+
+ @media only screen and (min-width: 768px) {
+
+   div.menu-movil{
+      display: none;
+   }
+
+ }
+
+ div.menu-movil span {
+
+   /* altura:*/
+   height: 8px;
+   margin-bottom: 6px;
+   background-color: white;
+   display: block;
+
+ }
 
 
 
